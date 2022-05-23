@@ -11,3 +11,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --main-color: rgb(64, 201, 162);
+  --secund-color: rgb(229, 249, 224);
+  --third-color: rgb(102, 65, 71);
+  --fourth-color: #2f9c95;
+}
+
+button {
+  background-color: var(--third-color);
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: var(--secund-color);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+button:disabled {
+  background-color: grey;
+  border: none;
+  color: white;
+}
+
+input {
+  border: solid rgba(128, 128, 128, 0.432) 1px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px 5px;
+}
+
+select {
+  background-color: white;
+  border: solid rgba(128, 128, 128, 0.432) 1px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px 5px;
+}
+
+input:focus {
+  outline-color: var(--third-color);
+  outline-style: double;
+}
+
+select:focus {
+  outline-color: var(--third-color);
+  outline-style: double;
+}
+
+h1 , h2 , h3 , h4 , p {
+  margin: 0;
+}
